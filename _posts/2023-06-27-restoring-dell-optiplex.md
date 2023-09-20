@@ -26,7 +26,7 @@ This meant that I had to find a way to recreate that partition myself.
 While Dell does not provide the tools required to create a recovery partition, they do provide upgrade packages that contain part of the original files on it.
 The process to restore the system is pretty simple, once you know what you are doing, but figuring that out took some time.
 
-Additionally, I also used [Goodell's guide](http://www.goodells.net/dellutility/recreate.shtml) as a reference on how to recreate the partition.
+Additionally, I also used [Goodell's guide](https://www.goodells.net/dellutility/recreate.shtml) as a reference on how to recreate the partition.
 
 ## The solution
 
