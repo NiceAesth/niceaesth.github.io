@@ -1,6 +1,6 @@
 ---
 title: Extracting iOS Ringtones from .ipsw
-date: 2023-09-21 16:11:00 +03:00
+date: 2023-09-21 02:09:00 +03:00
 categories: [Technology, iOS]
 tags: [iOS, ringtones]
 ---
