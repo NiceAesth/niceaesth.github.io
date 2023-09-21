@@ -1,7 +1,7 @@
 ---
 title: Extracting iOS Ringtones from .ipsw
 date: 2023-09-21 02:09:00 +03:00
-categories: [Technology, iOS]
+categories: [Technology, Extraction]
 tags: [iOS, ringtones]
 ---
 
@@ -19,11 +19,11 @@ Recently, Apple has added a selection of new ringtones to iOS 17. These were ver
 2. Open the `.ipsw` file using `7-Zip` (right click and open archive).
 3. You will see multiple `.dmg` files inside. Sort by size, and extract the largest one.
 4. Open the `.dmg` file using whatever method you prefer. I chose to just do this on macOS as it was the easiest.
-5. Navigate to the `Library/Ringtones/` folder.
+5. Navigate to the `Library/Ringtones/`{: .filepath} folder.
 6. ???
 7. Profit!
 
-Additionally, you may obtain the wallpapers which are stored in the appropriately named `Wallpaper` folder.
+Additionally, you may obtain the wallpapers which are stored in the appropriately named `Library/Wallpaper`{: .filepath} folder.
 
 ## For those too lazy to do this
 

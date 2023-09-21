@@ -1,8 +1,8 @@
 ---
 title: Technomancy and restoring an old Dell Optiplex
 date: 2023-06-27 16:11:00 +03:00
-categories: [Technology, Windows]
-tags: [old, dell]
+categories: [Technology, Retro]
+tags: [windows, dell]
 ---
 
 ## Backstory
@@ -38,7 +38,7 @@ There are a few requirements:
 
 1. The first step is to create a FAT16 partition (between 30 and 64 MB) at the start of the harddrive. I used GParted from Hiren's BootCD since I already had a Windows installation I wished to preserve. This ended up taking a lot of time.
 
-2. The second step was to add the `AUTOEXEC.BAT`, `CONFIG.SYS` and `REBOOT.COM` files.
+2. The second step was to add the `AUTOEXEC.BAT`, `CONFIG.SYS` and `REBOOT.COM` files to the newly created partition.
 
     {: file="AUTOEXEC.BAT" }
 
@@ -80,7 +80,7 @@ There are a few requirements:
 
     A `REBOOT.COM` file can be obtained online easily, from sources such as [GitHub](https://github.com/susam/reboot/).
 
-3. The third step was to boot from the aforementioned FreeDOS USB stick. After that, you can run the `sys D:` command to make the recovery parition bootable. (Obviously, change the drive letter as needed.)
+3. The third step was to boot from the aforementioned FreeDOS USB stick. After that, you can run the `sys D:` command to make the recovery parition bootable. (Obviously, change the drive letter to point to the recovery partition)
 
 4. Use a partition table editor (such as [PowerQuest Partition Editor](https://pendriveapps.com/downloads/PTEDIT32.zip)) in order to change the type of the utility partition from `06` to `DE`. Dell uses a special `DE` type for the recovery partition. Without setting this, the BIOS / upgrade package will not recognize the recovery partition.
 
