@@ -259,7 +259,7 @@ Then simply add the following to `/etc/caddy/env`{: .filepath}:
 CF_API_TOKEN=YOUR_API_TOKEN
 ```
 
-The resulting directory structure for `/etc/caddy/`{: .filepath}: looks like this in my case:
+The resulting directory structure for `/etc/caddy/`{: .filepath} looks like this in my case:
 
 ```tree
 /etc/caddy
@@ -269,7 +269,7 @@ The resulting directory structure for `/etc/caddy/`{: .filepath}: looks like thi
 └── ...
 ```
 
-And my `Caddy` binary is located at `/usr/bin/caddy`{: .filepath}:.
+And my `Caddy` binary is located at `/usr/bin/caddy`{: .filepath}.
 
 ## Conclusion
 
