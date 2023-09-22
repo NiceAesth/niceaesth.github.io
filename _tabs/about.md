@@ -13,7 +13,7 @@ I'm **Andrei Baciu**, a developer from Cluj-Napoca, Romania. I love all things t
 While this section could be much larger, I have chosen to showcase the projects that reveal my aptitude and interests.
 
 - [Sunny](https://github.com/SunnyCord/bot) - A Discord bot that provides advanced osu! statistics, music playback and more.
-- [Clair](https://reboot.aesth.dev/) - Clair is an air quality monitoring system, made by Team Reboot during a hackathon with Bosch Engineering as our mentor.
+- [Clair](https://www.facebook.com/descoperatipasiuneainit/videos/clair-proiectul-castigator-dpit-2019-la-tvr-cluj/2829508230426711/) - Clair is an air quality monitoring system, made by [Team Reboot](https://reboot.aesth.dev/) during a hackathon with Bosch Engineering as our mentor.
 It was an opportunity to learn full stack development and some hardware engineering.
 - [aiosu](https://github.com/NiceAesth/aiosu) - aiosu is a simple and fast asynchronous library for interacting with the osu! API.
 
