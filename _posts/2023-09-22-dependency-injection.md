@@ -123,7 +123,7 @@ class UserRepository(BaseUserRepository):
 
 #### Service
 
-The service is the layer that interacts with the repository and provides models to the application. Any logic that is not part of the repository should be handled by the service layer. This layer is where dependency injection comes into play. It allows us to change the implementation of the repository without changing the rest of the application.
+The service is the layer that interacts with the repository and provides models to the application. Any logic that is not part of the repository should be handled by the service layer.
 
 ```python
 class UserService:
@@ -151,7 +151,11 @@ class UserService:
         return get_one(username) is not None
 ```
 
-In this example, the user repository uses a stateful approach by storing the data in a dictionary. In a real application, the user repository would be interacting with a database of sorts. This makes it difficult to unit test the repository as we would need to mock the database. With this approach, we can easily change the implementation of the user repository inside the tests and test the service layer without acquiring the database.
+This layer is where dependency injection comes into play.
+
+In this example, the user repository uses a stateful approach by storing the data in a dictionary. In a real application, the user repository would be interacting with a database of sorts.
+
+This makes it difficult to unit test the repository as we normally would need to mock the database. However, because of dependency injection, we can easily change the implementation of the user repository inside the tests and test the service layer without acquiring the database.
 
 #### Rules
 
