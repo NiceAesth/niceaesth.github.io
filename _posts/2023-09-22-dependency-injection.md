@@ -30,7 +30,7 @@ In this example, the UserManager class creates a data dictionary and stores it i
 
 So, how do we improve on this using dependency injection?
 
-### The Repository-Service Pattern
+## The Repository-Service Pattern
 
 The repository-service pattern is a design pattern that allows for the separation of the data access layer from the business logic layer.
 
@@ -43,7 +43,7 @@ The repository-service pattern commonly consists of the following main component
 
 Let's take a look at how we would prepare this code for the repository-service pattern.
 
-#### Data Model
+### Data Model
 
 The data model consists of a class that represents the data the repository will be storing in the format that the project requires. The data model is a very simple concept that should keep logic to a minimum. Possible logic could be data validation, data sanitization, etc.
 
@@ -61,7 +61,7 @@ class User:
         self.created_at = created_at
 ```
 
-#### Repository Interface
+### Repository Interface
 
 The repository interface is a contract that the repository implementation must adhere to. It defines the methods that the repository implementation must implement. The addition of this layer of abstraction makes it easy to (inter)change the implementation of the repository.
 
@@ -92,7 +92,7 @@ class BaseUserRepository(ABC):
         ...
 ```
 
-#### Repository Implementation
+### Repository Implementation
 
 The repository implementation inherits from the interface and implements the methods defined in the interface. Its main responsibility is to abstract the database layer away from the rest of the application. The repository will return and receive plain data.
 
@@ -121,7 +121,7 @@ class UserRepository(BaseUserRepository):
         del self.data[username]
 ```
 
-#### Service
+### Service
 
 The service is the layer that interacts with the repository and provides models to the application. Any logic that is not part of the repository should be handled by the service layer.
 
@@ -157,7 +157,7 @@ In this example, the user repository uses a stateful approach by storing the dat
 
 This makes it difficult to unit test the repository as we normally would need to mock the database. However, because of dependency injection, we can easily change the implementation of the user repository inside the tests and test the service layer without acquiring the database.
 
-#### Rules
+### Rules
 
 Now, you might be excited to use this pattern in everything you write. However, there are some rules to follow to make sure shit doesn't hit the fan. In principle, this means that you may only interact one layer deep.
 
