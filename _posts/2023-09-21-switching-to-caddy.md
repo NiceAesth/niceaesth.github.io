@@ -2,7 +2,7 @@
 title: Switching to Caddy
 date: 2023-09-21 11:34:00 +03:00
 categories: [Technology, Server]
-tags: [Caddy]
+tags: [caddy]
 ---
 
 ## Backstory
@@ -40,6 +40,11 @@ After that, you can start using it by adding the following to your `Caddyfile`:
 
 ```py
 {
+    # If you wish to explicitly use a self-signed
+    # certificate uncomment the line below and comment
+    # the acme_dns line
+    #
+    # local_certs
     acme_dns cloudflare {env.CF_API_TOKEN}
 }
 ```
